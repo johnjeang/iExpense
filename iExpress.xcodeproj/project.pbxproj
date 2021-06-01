@@ -11,6 +11,8 @@
 		A4745A69266589A40046977D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4745A68266589A40046977D /* ContentView.swift */; };
 		A4745A6B266589AE0046977D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4745A6A266589AE0046977D /* Assets.xcassets */; };
 		A4745A6E266589AE0046977D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4745A6D266589AE0046977D /* Preview Assets.xcassets */; };
+		A4745A762666BED70046977D /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4745A752666BED70046977D /* Expense.swift */; };
+		A4745A782666CA690046977D /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4745A772666CA680046977D /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		A4745A6A266589AE0046977D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4745A6D266589AE0046977D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4745A6F266589AE0046977D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4745A752666BED70046977D /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		A4745A772666CA680046977D /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				A4745A66266589A40046977D /* iExpressApp.swift */,
 				A4745A68266589A40046977D /* ContentView.swift */,
+				A4745A752666BED70046977D /* Expense.swift */,
+				A4745A772666CA680046977D /* AddView.swift */,
 				A4745A6A266589AE0046977D /* Assets.xcassets */,
 				A4745A6F266589AE0046977D /* Info.plist */,
 				A4745A6C266589AE0046977D /* Preview Content */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4745A782666CA690046977D /* AddView.swift in Sources */,
+				A4745A762666BED70046977D /* Expense.swift in Sources */,
 				A4745A69266589A40046977D /* ContentView.swift in Sources */,
 				A4745A67266589A40046977D /* iExpressApp.swift in Sources */,
 			);
