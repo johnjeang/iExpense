@@ -11,6 +11,7 @@ struct AddView: View {
   @State private var name = ""
   @State private var type = "Personal"
   @State private var amount = ""
+  @State private var isShowingAlert = false
   @ObservedObject var expenses: Expenses
   @Environment(\.presentationMode) var presentationMode
   
@@ -34,10 +35,16 @@ struct AddView: View {
                               if let intAmount = Int(amount){
                                 let item = ExpenseItem(name: name, type: type, amount: intAmount)
                                 expenses.items.append(item)
+                                presentationMode.wrappedValue.dismiss()
                               }
-                              presentationMode.wrappedValue.dismiss()
+                              else{
+                                isShowingAlert = true
+                              }
                             }
       )
+      .alert(isPresented: $isShowingAlert, content: {
+        Alert(title: Text("Invalid"), message: Text("Please try again"), dismissButton: .default(Text("OK")))
+      })
     }
 
   }
